@@ -2,14 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>exercice 1 partie 4 php</title>
+    <title>exercice 1 partie 5 php</title>
   </head>
   <body>
     <?php
-    function returnTrue() {
-      return true;
-    }
-    echo returnTrue();
+    $month=['janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','décembre'];
+    print_r($month);
     ?>
   </body>
 </html>
