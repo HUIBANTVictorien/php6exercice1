@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>exercice 1 partie 5 php</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 1 partie 6 php</title>
+</head>
+<body>
+  <a href="index.php?nom=Nemare&amp;prenom=Jean">Jean Nemare</a>
+  <p>
     <?php
-    $month=['janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','décembre'];
-    print_r($month);
+    if (isset($_GET['nom']) && ($_GET['prenom'])) {
+      echo 'Bonjour ' .$_GET['nom'] .' '. $_GET['prenom'];
+    } 
     ?>
-  </body>
+  </p>
+</body>
 </html>
